@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Live News | Latest News Updates</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="India Live News">
+                <h1>India Live News</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search news...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="active"><a href="#" onclick="fetchNews('latest')"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" onclick="fetchNews('india')"><i class="fas fa-flag"></i> India</a></li>
+                <li><a href="#" onclick="fetchNews('world')"><i class="fas fa-globe"></i> World</a></li>
+                <li><a href="#" onclick="fetchNews('business')"><i class="fas fa-chart-line"></i> Business</a></li>
+                <li><a href="#" onclick="fetchNews('sports')"><i class="fas fa-running"></i> Sports</a></li>
+                <li><a href="#" onclick="fetchNews('entertainment')"><i class="fas fa-film"></i> Entertainment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="breaking-news">
+            <div class="breaking-news-ticker">
+                <span>BREAKING:</span>
+                <marquee id="breaking-news-content">Loading breaking news...</marquee>
+            </div>
+        </section>
+
+        <section class="news-container">
+            <div class="main-news" id="featured-news">
+                <!-- Featured news will load here -->
+            </div>
+
+            <div class="news-grid" id="news-grid">
+                <!-- Regular news items will load here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>India Live News brings you the latest and most accurate news from across India and the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 India Live News. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
